@@ -38,6 +38,7 @@ function getDados() {
 }
 
 function novaJanela(proc, all_li) {
+    alert("abrindo nova janela....")
     let novaJanela = window.open('', '_blank', 'width=600,height=400');
     if (novaJanela) {
         novaJanela.document.write(`<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${proc}</title></head><body><h1>${proc}</h1>${all_li}</body></html>`);
